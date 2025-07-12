@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target subscriber[0m
+[100%] Built target subscriber
+-- Install configuration: ""
+-- Up-to-date: /home/kyw10987/workspace/install/sub_node_cpp/lib/sub_node_cpp/subscriber
+-- Up-to-date: /home/kyw10987/workspace/install/sub_node_cpp/share/ament_index/resource_index/package_run_dependencies/sub_node_cpp
+-- Up-to-date: /home/kyw10987/workspace/install/sub_node_cpp/share/ament_index/resource_index/parent_prefix_path/sub_node_cpp
+-- Up-to-date: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/environment/ament_prefix_path.sh
+-- Up-to-date: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/environment/path.sh
+-- Up-to-date: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/environment/path.dsv
+-- Up-to-date: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/local_setup.bash
+-- Up-to-date: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/local_setup.sh
+-- Up-to-date: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/local_setup.zsh
+-- Up-to-date: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/local_setup.dsv
+-- Installing: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/package.dsv
+-- Up-to-date: /home/kyw10987/workspace/install/sub_node_cpp/share/ament_index/resource_index/packages/sub_node_cpp
+-- Up-to-date: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/cmake/sub_node_cppConfig.cmake
+-- Up-to-date: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/cmake/sub_node_cppConfig-version.cmake
+-- Up-to-date: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/package.xml

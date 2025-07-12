@@ -1,0 +1,3 @@
+[console_scripts]
+viewer = image_viewer.viewer:main
+

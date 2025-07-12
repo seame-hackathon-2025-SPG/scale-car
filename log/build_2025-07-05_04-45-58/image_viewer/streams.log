@@ -1,0 +1,37 @@
+[0.860s] Invoking command in '/home/kyw10987/workspace/src/image_viewer': PYTHONPATH=/home/kyw10987/workspace/build/image_viewer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kyw10987/workspace/install/image_viewer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/image_viewer build --build-base /home/kyw10987/workspace/build/image_viewer/build install --record /home/kyw10987/workspace/build/image_viewer/install.log --single-version-externally-managed install_data
+[0.993s] running egg_info
+[0.994s] creating ../../build/image_viewer/image_viewer.egg-info
+[0.994s] writing ../../build/image_viewer/image_viewer.egg-info/PKG-INFO
+[0.995s] writing dependency_links to ../../build/image_viewer/image_viewer.egg-info/dependency_links.txt
+[0.995s] writing entry points to ../../build/image_viewer/image_viewer.egg-info/entry_points.txt
+[0.995s] writing requirements to ../../build/image_viewer/image_viewer.egg-info/requires.txt
+[0.995s] writing top-level names to ../../build/image_viewer/image_viewer.egg-info/top_level.txt
+[0.995s] writing manifest file '../../build/image_viewer/image_viewer.egg-info/SOURCES.txt'
+[0.996s] reading manifest file '../../build/image_viewer/image_viewer.egg-info/SOURCES.txt'
+[0.997s] writing manifest file '../../build/image_viewer/image_viewer.egg-info/SOURCES.txt'
+[0.998s] running build
+[0.998s] running build_py
+[0.998s] creating /home/kyw10987/workspace/build/image_viewer/build
+[0.998s] creating /home/kyw10987/workspace/build/image_viewer/build/lib
+[0.998s] creating /home/kyw10987/workspace/build/image_viewer/build/lib/image_viewer
+[0.998s] copying image_viewer/__init__.py -> /home/kyw10987/workspace/build/image_viewer/build/lib/image_viewer
+[0.998s] copying image_viewer/viewer.py -> /home/kyw10987/workspace/build/image_viewer/build/lib/image_viewer
+[0.999s] running install
+[1.000s] running install_lib
+[1.000s] creating /home/kyw10987/workspace/install/image_viewer/lib/python3.10/site-packages/image_viewer
+[1.000s] copying /home/kyw10987/workspace/build/image_viewer/build/lib/image_viewer/__init__.py -> /home/kyw10987/workspace/install/image_viewer/lib/python3.10/site-packages/image_viewer
+[1.000s] copying /home/kyw10987/workspace/build/image_viewer/build/lib/image_viewer/viewer.py -> /home/kyw10987/workspace/install/image_viewer/lib/python3.10/site-packages/image_viewer
+[1.000s] byte-compiling /home/kyw10987/workspace/install/image_viewer/lib/python3.10/site-packages/image_viewer/__init__.py to __init__.cpython-310.pyc
+[1.000s] byte-compiling /home/kyw10987/workspace/install/image_viewer/lib/python3.10/site-packages/image_viewer/viewer.py to viewer.cpython-310.pyc
+[1.000s] running install_data
+[1.000s] creating /home/kyw10987/workspace/install/image_viewer/share/ament_index
+[1.001s] creating /home/kyw10987/workspace/install/image_viewer/share/ament_index/resource_index
+[1.001s] creating /home/kyw10987/workspace/install/image_viewer/share/ament_index/resource_index/packages
+[1.001s] copying resource/image_viewer -> /home/kyw10987/workspace/install/image_viewer/share/ament_index/resource_index/packages
+[1.001s] copying package.xml -> /home/kyw10987/workspace/install/image_viewer/share/image_viewer
+[1.001s] running install_egg_info
+[1.003s] Copying ../../build/image_viewer/image_viewer.egg-info to /home/kyw10987/workspace/install/image_viewer/lib/python3.10/site-packages/image_viewer-0.0.0-py3.10.egg-info
+[1.003s] running install_scripts
+[1.016s] Installing viewer script to /home/kyw10987/workspace/install/image_viewer/lib/image_viewer
+[1.016s] writing list of installed files to '/home/kyw10987/workspace/build/image_viewer/install.log'
+[1.038s] Invoked command in '/home/kyw10987/workspace/src/image_viewer' returned '0': PYTHONPATH=/home/kyw10987/workspace/build/image_viewer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kyw10987/workspace/install/image_viewer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/image_viewer build --build-base /home/kyw10987/workspace/build/image_viewer/build install --record /home/kyw10987/workspace/build/image_viewer/install.log --single-version-externally-managed install_data

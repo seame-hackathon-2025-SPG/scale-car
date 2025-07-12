@@ -1,0 +1,68 @@
+[0.448s] Invoking command in '/home/kyw10987/workspace/build/sub_node_cpp': CMAKE_PREFIX_PATH=/home/kyw10987/workspace/install/sub_node:/home/kyw10987/workspace/install/pub_node:/opt/ros/humble /usr/bin/cmake /home/kyw10987/workspace/src/sub_node_cpp -DCMAKE_INSTALL_PREFIX=/home/kyw10987/workspace/install/sub_node_cpp
+[0.563s] -- The C compiler identification is GNU 11.4.0
+[1.006s] -- The CXX compiler identification is GNU 11.4.0
+[1.239s] -- Detecting C compiler ABI info
+[1.329s] -- Detecting C compiler ABI info - done
+[1.336s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.336s] -- Detecting C compile features
+[1.336s] -- Detecting C compile features - done
+[1.338s] -- Detecting CXX compiler ABI info
+[1.431s] -- Detecting CXX compiler ABI info - done
+[1.434s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.435s] -- Detecting CXX compile features
+[1.435s] -- Detecting CXX compile features - done
+[1.440s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.537s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.624s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.734s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.743s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.752s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.766s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.783s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.828s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.831s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.217s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.649s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.364s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.370s] -- Looking for pthread.h
+[3.470s] -- Looking for pthread.h - found
+[3.470s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.553s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.554s] -- Found Threads: TRUE  
+[3.603s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.657s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.657s] -- Configured cppcheck include dirs: 
+[3.657s] -- Configured cppcheck exclude dirs and/or files: 
+[3.658s] -- Added test 'lint_cmake' to check CMake code style
+[3.659s] -- Added test 'uncrustify' to check C / C++ code style
+[3.659s] -- Configured uncrustify additional arguments: 
+[3.660s] -- Added test 'xmllint' to check XML markup files
+[3.662s] -- Configuring done
+[3.667s] -- Generating done
+[3.669s] -- Build files have been written to: /home/kyw10987/workspace/build/sub_node_cpp
+[3.675s] Invoked command in '/home/kyw10987/workspace/build/sub_node_cpp' returned '0': CMAKE_PREFIX_PATH=/home/kyw10987/workspace/install/sub_node:/home/kyw10987/workspace/install/pub_node:/opt/ros/humble /usr/bin/cmake /home/kyw10987/workspace/src/sub_node_cpp -DCMAKE_INSTALL_PREFIX=/home/kyw10987/workspace/install/sub_node_cpp
+[3.676s] Invoking command in '/home/kyw10987/workspace/build/sub_node_cpp': CMAKE_PREFIX_PATH=/home/kyw10987/workspace/install/sub_node:/home/kyw10987/workspace/install/pub_node:/opt/ros/humble /usr/bin/cmake --build /home/kyw10987/workspace/build/sub_node_cpp -- -j16 -l16
+[3.702s] [ 50%] [32mBuilding CXX object CMakeFiles/subscriber.dir/src/subscriber.cpp.o[0m
+[8.655s] [100%] [32m[1mLinking CXX executable subscriber[0m
+[8.925s] [100%] Built target subscriber
+[8.932s] Invoked command in '/home/kyw10987/workspace/build/sub_node_cpp' returned '0': CMAKE_PREFIX_PATH=/home/kyw10987/workspace/install/sub_node:/home/kyw10987/workspace/install/pub_node:/opt/ros/humble /usr/bin/cmake --build /home/kyw10987/workspace/build/sub_node_cpp -- -j16 -l16
+[8.934s] Invoking command in '/home/kyw10987/workspace/build/sub_node_cpp': CMAKE_PREFIX_PATH=/home/kyw10987/workspace/install/sub_node:/home/kyw10987/workspace/install/pub_node:/opt/ros/humble /usr/bin/cmake --install /home/kyw10987/workspace/build/sub_node_cpp
+[8.937s] -- Install configuration: ""
+[8.937s] -- Installing: /home/kyw10987/workspace/install/sub_node_cpp/lib/sub_node_cpp/subscriber
+[8.938s] -- Set runtime path of "/home/kyw10987/workspace/install/sub_node_cpp/lib/sub_node_cpp/subscriber" to ""
+[8.939s] -- Installing: /home/kyw10987/workspace/install/sub_node_cpp/share/ament_index/resource_index/package_run_dependencies/sub_node_cpp
+[8.939s] -- Installing: /home/kyw10987/workspace/install/sub_node_cpp/share/ament_index/resource_index/parent_prefix_path/sub_node_cpp
+[8.939s] -- Installing: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/environment/ament_prefix_path.sh
+[8.939s] -- Installing: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/environment/ament_prefix_path.dsv
+[8.939s] -- Installing: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/environment/path.sh
+[8.939s] -- Installing: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/environment/path.dsv
+[8.939s] -- Installing: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/local_setup.bash
+[8.939s] -- Installing: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/local_setup.sh
+[8.940s] -- Installing: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/local_setup.zsh
+[8.940s] -- Installing: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/local_setup.dsv
+[8.940s] -- Installing: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/package.dsv
+[8.940s] -- Installing: /home/kyw10987/workspace/install/sub_node_cpp/share/ament_index/resource_index/packages/sub_node_cpp
+[8.940s] -- Installing: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/cmake/sub_node_cppConfig.cmake
+[8.940s] -- Installing: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/cmake/sub_node_cppConfig-version.cmake
+[8.941s] -- Installing: /home/kyw10987/workspace/install/sub_node_cpp/share/sub_node_cpp/package.xml
+[8.942s] Invoked command in '/home/kyw10987/workspace/build/sub_node_cpp' returned '0': CMAKE_PREFIX_PATH=/home/kyw10987/workspace/install/sub_node:/home/kyw10987/workspace/install/pub_node:/opt/ros/humble /usr/bin/cmake --install /home/kyw10987/workspace/build/sub_node_cpp
