@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'pub_node'
+package_name = 'integration'
 
 setup(
     name=package_name,
@@ -13,14 +13,13 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='seungwoo',
-    maintainer_email='seungwoo@todo.todo',
+    maintainer='kyw10987',
+    maintainer_email='kyw10987@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'publisher = pub_node.publisher:main',
         ],
     },
 )
