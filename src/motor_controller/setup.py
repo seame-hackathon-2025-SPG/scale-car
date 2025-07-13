@@ -20,8 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'motor_controller_pub_node = motor_controller.pub_node.publisher:main',
-            'motor_controller_sub_node = motor_controller.sub_node.subscriber:main'
+            'motor_controller_pub_node = pub_node.publisher:main',
+            'motor_controller_sub_node = sub_node.subscriber:main'
         ],
     },
 )
