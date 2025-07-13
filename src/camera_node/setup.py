@@ -21,7 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'camera_publisher = publisher.camera_publisher:main',
-            'camera_subscriber = subscriber.camera_subscriber:main',
+            'lane_detection_subscriber = subscriber.lane_detection_subscriber:main',
         ],
     },
 )
