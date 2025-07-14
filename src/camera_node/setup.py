@@ -23,6 +23,7 @@ setup(
             'camera_publisher = publisher.camera_publisher:main',
             'lane_detection_subscriber = subscriber.lane_detection_subscriber:main',
             'stop_line_subscriber = subscriber.stop_line_subscriber:main',
+            'lane_motor_bridge = subscriber.lane_motor_bridge:main',
         ],
     },
 )
