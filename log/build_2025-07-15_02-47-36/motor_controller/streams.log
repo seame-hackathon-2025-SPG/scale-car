@@ -1,0 +1,26 @@
+[0.697s] Invoking command in '/home/kyw10987/workspace/src/motor_controller': PYTHONPATH=/home/kyw10987/workspace/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kyw10987/workspace/install/motor_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motor_controller build --build-base /home/kyw10987/workspace/build/motor_controller/build install --record /home/kyw10987/workspace/build/motor_controller/install.log --single-version-externally-managed install_data
+[0.809s] running egg_info
+[0.809s] creating ../../build/motor_controller/motor_controller.egg-info
+[0.809s] writing ../../build/motor_controller/motor_controller.egg-info/PKG-INFO
+[0.810s] writing dependency_links to ../../build/motor_controller/motor_controller.egg-info/dependency_links.txt
+[0.810s] writing entry points to ../../build/motor_controller/motor_controller.egg-info/entry_points.txt
+[0.810s] writing requirements to ../../build/motor_controller/motor_controller.egg-info/requires.txt
+[0.810s] writing top-level names to ../../build/motor_controller/motor_controller.egg-info/top_level.txt
+[0.810s] writing manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'
+[0.811s] reading manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'
+[0.811s] writing manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'
+[0.811s] running build
+[0.811s] running install
+[0.811s] running install_data
+[0.811s] creating /home/kyw10987/workspace/install/motor_controller/share/ament_index
+[0.811s] creating /home/kyw10987/workspace/install/motor_controller/share/ament_index/resource_index
+[0.811s] creating /home/kyw10987/workspace/install/motor_controller/share/ament_index/resource_index/packages
+[0.811s] copying resource/motor_controller -> /home/kyw10987/workspace/install/motor_controller/share/ament_index/resource_index/packages
+[0.811s] copying package.xml -> /home/kyw10987/workspace/install/motor_controller/share/motor_controller
+[0.811s] running install_egg_info
+[0.813s] Copying ../../build/motor_controller/motor_controller.egg-info to /home/kyw10987/workspace/install/motor_controller/lib/python3.10/site-packages/motor_controller-0.0.0-py3.10.egg-info
+[0.813s] running install_scripts
+[0.825s] Installing motor_controller_pub_node script to /home/kyw10987/workspace/install/motor_controller/lib/motor_controller
+[0.825s] Installing motor_controller_sub_node script to /home/kyw10987/workspace/install/motor_controller/lib/motor_controller
+[0.825s] writing list of installed files to '/home/kyw10987/workspace/build/motor_controller/install.log'
+[0.852s] Invoked command in '/home/kyw10987/workspace/src/motor_controller' returned '0': PYTHONPATH=/home/kyw10987/workspace/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kyw10987/workspace/install/motor_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motor_controller build --build-base /home/kyw10987/workspace/build/motor_controller/build install --record /home/kyw10987/workspace/build/motor_controller/install.log --single-version-externally-managed install_data

@@ -1,0 +1,4 @@
+[console_scripts]
+motor_controller_pub_node = motor_controller.pub_node.publisher:main
+motor_controller_sub_node = motor_controller.sub_node.subscriber:main
+

@@ -1,0 +1,4 @@
+[console_scripts]
+joystick_control_publisher = joystick_control.pub_node.joystick_control_publisher:main
+joystick_control_subscriber = joystick_control.sub_node.joystick_control_subscriber:main
+

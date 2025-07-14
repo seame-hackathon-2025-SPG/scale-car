@@ -1,0 +1,35 @@
+[0.707s] Invoking command in '/home/kyw10987/workspace/src/integration': PYTHONPATH=/home/kyw10987/workspace/build/integration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kyw10987/workspace/install/integration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/integration build --build-base /home/kyw10987/workspace/build/integration/build install --record /home/kyw10987/workspace/build/integration/install.log --single-version-externally-managed install_data
+[0.822s] running egg_info
+[0.823s] creating ../../build/integration/integration.egg-info
+[0.823s] writing ../../build/integration/integration.egg-info/PKG-INFO
+[0.823s] writing dependency_links to ../../build/integration/integration.egg-info/dependency_links.txt
+[0.823s] writing entry points to ../../build/integration/integration.egg-info/entry_points.txt
+[0.823s] writing requirements to ../../build/integration/integration.egg-info/requires.txt
+[0.823s] writing top-level names to ../../build/integration/integration.egg-info/top_level.txt
+[0.823s] writing manifest file '../../build/integration/integration.egg-info/SOURCES.txt'
+[0.824s] reading manifest file '../../build/integration/integration.egg-info/SOURCES.txt'
+[0.825s] writing manifest file '../../build/integration/integration.egg-info/SOURCES.txt'
+[0.825s] running build
+[0.825s] running build_py
+[0.825s] creating /home/kyw10987/workspace/build/integration/build
+[0.825s] creating /home/kyw10987/workspace/build/integration/build/lib
+[0.825s] creating /home/kyw10987/workspace/build/integration/build/lib/integration
+[0.825s] copying integration/__init__.py -> /home/kyw10987/workspace/build/integration/build/lib/integration
+[0.825s] running install
+[0.826s] running install_lib
+[0.826s] creating /home/kyw10987/workspace/install/integration/lib/python3.10/site-packages/integration
+[0.826s] copying /home/kyw10987/workspace/build/integration/build/lib/integration/__init__.py -> /home/kyw10987/workspace/install/integration/lib/python3.10/site-packages/integration
+[0.826s] byte-compiling /home/kyw10987/workspace/install/integration/lib/python3.10/site-packages/integration/__init__.py to __init__.cpython-310.pyc
+[0.827s] running install_data
+[0.827s] creating /home/kyw10987/workspace/install/integration/share/ament_index
+[0.827s] creating /home/kyw10987/workspace/install/integration/share/ament_index/resource_index
+[0.827s] creating /home/kyw10987/workspace/install/integration/share/ament_index/resource_index/packages
+[0.827s] copying resource/integration -> /home/kyw10987/workspace/install/integration/share/ament_index/resource_index/packages
+[0.827s] copying package.xml -> /home/kyw10987/workspace/install/integration/share/integration
+[0.827s] creating /home/kyw10987/workspace/install/integration/share/integration/launch
+[0.827s] copying integration/launch/launch.py -> /home/kyw10987/workspace/install/integration/share/integration/launch
+[0.827s] running install_egg_info
+[0.828s] Copying ../../build/integration/integration.egg-info to /home/kyw10987/workspace/install/integration/lib/python3.10/site-packages/integration-0.0.0-py3.10.egg-info
+[0.829s] running install_scripts
+[0.841s] writing list of installed files to '/home/kyw10987/workspace/build/integration/install.log'
+[0.856s] Invoked command in '/home/kyw10987/workspace/src/integration' returned '0': PYTHONPATH=/home/kyw10987/workspace/build/integration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kyw10987/workspace/install/integration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/integration build --build-base /home/kyw10987/workspace/build/integration/build install --record /home/kyw10987/workspace/build/integration/install.log --single-version-externally-managed install_data
