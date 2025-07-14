@@ -1,0 +1,15 @@
+<package format="3">
+  <name>stop_line_detector</name>
+  <version>0.0.1</version>
+  <description>Stop line detector that stops the vehicle for 5 seconds when triggered</description>
+  <maintainer email="your@email.com">Jingyu</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+</package>

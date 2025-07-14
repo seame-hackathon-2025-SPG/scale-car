@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../crosswalk_detector"
+		},
+		{
+			"path": "../../../../../red_zone_detector"
+		},
+		{
+			"path": "../../../.."
+		}
+	]
+}
