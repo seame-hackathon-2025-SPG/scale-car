@@ -23,12 +23,17 @@ class LaneDetectionNode(Node):
         self.br = CvBridge()
         self.get_logger().info('🚗 Lane Detection Node Started')
 
+        # ✅ fallback용 이전 값 저장 변수
+        self.last_center_x = -1
+        self.last_angle_deg = 0
+
     def image_callback(self, data):
         frame = self.br.imgmsg_to_cv2(data, desired_encoding='bgr8')
         height, width, _ = frame.shape
+        self.get_logger().info(f'height: {height}, width: {width}')
 
         # 1️⃣ ROI: 아래쪽 절반
-        roi = frame[int(height * 2/3):, :]
+        roi = frame[int(height * 1/2):, :]
 
         # 2️⃣ grayscale → blur → Canny edge
         gray = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
@@ -43,7 +48,6 @@ class LaneDetectionNode(Node):
             for line in lines:
                 x1, y1, x2, y2 = line[0]
                 slope = (y2 - y1) / (x2 - x1 + 1e-6)  # prevent division by zero
-                self.get_logger().info(f'line: {line[0]}, slope: {slope:.2f}')
                 if abs(slope) < 0.5:  # 수평선 무시
                     continue
                 if x1 < width / 2 and x2 < width / 2:
@@ -59,10 +63,17 @@ class LaneDetectionNode(Node):
             center_x = (left_mean_x + right_mean_x) / 2
             mean_slope = (np.mean(left_slopes) + np.mean(right_slopes)) / 2
             angle_deg = np.degrees(np.arctan(mean_slope))
+
+            # ✅ fallback 값 업데이트
+            self.last_center_x = center_x
+            self.last_angle_deg = angle_deg
+
             self.get_logger().info(f'Center X: {center_x:.2f}, Angle: {angle_deg:.2f}')
         else:
-            center_x, angle_deg = -1, 0  # 실패시 기본값
-            self.get_logger().warn('차선을 찾지 못했습니다.')
+            # ✅ fallback 값 사용
+            center_x = self.last_center_x
+            angle_deg = self.last_angle_deg
+            self.get_logger().warn('차선을 찾지 못했습니다. 이전 값 유지합니다.')
 
         # 4️⃣ Publish [center_x, angle_deg]
         msg = Float32MultiArray()
@@ -71,28 +82,21 @@ class LaneDetectionNode(Node):
 
         # (선택) 시각화
         debug = roi.copy()
-        for line in lines:
-            x1, y1, x2, y2 = line[0]
-            slope = (y2 - y1) / (x2 - x1 + 1e-6)
+        if lines is not None:
+            for line in lines:
+                x1, y1, x2, y2 = line[0]
+                slope = (y2 - y1) / (x2 - x1 + 1e-6)
 
-            # 수평 (빨간색), 수직 (파란색)만 그리기
-            if abs(slope) < 0.5:
-                continue
-            elif abs(slope) >= 0.5:
-                
-                if x1 < width / 2 and x2 < width / 2:
-                    color = (255, 0, 0)  # 파란색
-                    cv2.line(debug, (x1, y1), (x2, y2), color, 2)
-                    left_slopes.append(slope)
-                    left_x.extend([x1, x2])
-                elif x1 > width / 2 and x2 > width / 2:
-                    color = (0, 0, 255)  # 파란색
-                    cv2.line(debug, (x1, y1), (x2, y2), color, 2)
-                    right_slopes.append(slope)
-                    right_x.extend([x1, x2])
-            else:
-                continue  # 초록색 대신 아예 무시
-            
+                if abs(slope) < 0.5:
+                    continue
+                elif abs(slope) >= 0.5:
+                    if x1 < width / 2 and x2 < width / 2:
+                        color = (255, 0, 0)  # 파란색 (왼쪽 차선)
+                        cv2.line(debug, (x1, y1), (x2, y2), color, 2)
+                    elif x1 > width / 2 and x2 > width / 2:
+                        color = (0, 0, 255)  # 빨간색 (오른쪽 차선)
+                        cv2.line(debug, (x1, y1), (x2, y2), color, 2)
+
         cv2.imshow('Hough', debug)
         cv2.imshow('Lane Detection', edges)
         cv2.waitKey(1)

@@ -18,6 +18,10 @@ class CameraNode(Node):
 
         # OpenCV 카메라 캡처 (0번 카메라)
         self.cap = cv2.VideoCapture(0)
+        self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+        self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+        self.cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*'MJPG'))
+
         if not self.cap.isOpened():
             self.get_logger().error('카메라를 열 수 없습니다.')
             exit(1)
@@ -29,12 +33,15 @@ class CameraNode(Node):
             self.get_logger().warn('카메라 프레임을 읽을 수 없습니다.')
             return
         
+        # 프레임 크기 출력
+        height, width, _ = frame.shape
+        self.get_logger().info(f'이미지 퍼블리시 중... (Width: {width}, Height: {height})')
+
         # OpenCV BGR 이미지를 ROS Image 메시지로 변환
         img_msg = self.br.cv2_to_imgmsg(frame, encoding='bgr8')
 
         # 퍼블리시
         self.publisher_.publish(img_msg)
-        self.get_logger().info('이미지 퍼블리시 중...')
 
     def destroy_node(self):
         self.cap.release()
@@ -49,9 +56,10 @@ def main(args=None):
     except KeyboardInterrupt:
         camera_node.get_logger().info('Ctrl+C 감지, 종료합니다.')
     finally:
+        if rclpy.ok():
+            rclpy.shutdown()
         camera_node.destroy_node()
         cv2.destroyAllWindows()
-        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
