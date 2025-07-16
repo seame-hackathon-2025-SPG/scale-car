@@ -67,7 +67,7 @@ class LaneMotorBridgeNode(Node):
             throttle = 0.1
             reason = "child_zone"
         else:
-            throttle = 0.5
+            throttle = 0.45
             reason = "normal"
 
         # ✅ 이유 출력 (로깅)

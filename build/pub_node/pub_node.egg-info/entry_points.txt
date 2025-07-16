@@ -1,3 +1,0 @@
-[console_scripts]
-publisher = pub_node.publisher:main
-

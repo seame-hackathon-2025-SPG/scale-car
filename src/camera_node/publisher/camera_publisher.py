@@ -37,8 +37,11 @@ class CameraNode(Node):
         height, width, _ = frame.shape
         self.get_logger().info(f'이미지 퍼블리시 중... (Width: {width}, Height: {height})')
 
-        # OpenCV BGR 이미지를 ROS Image 메시지로 변환
-        img_msg = self.br.cv2_to_imgmsg(frame, encoding='bgr8')
+        # 색상 반전
+        inverted_frame = cv2.bitwise_not(frame)
+
+        # 반전된 OpenCV BGR 이미지를 ROS Image 메시지로 변환
+        img_msg = self.br.cv2_to_imgmsg(inverted_frame, encoding='bgr8')
 
         # 퍼블리시
         self.publisher_.publish(img_msg)

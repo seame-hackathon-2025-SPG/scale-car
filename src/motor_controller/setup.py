@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'camera_node'
+package_name = 'motor_controller'
 
 setup(
     name=package_name,
@@ -13,18 +13,17 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='kimsh',
-    maintainer_email='kimsh@todo.todo',
+    maintainer='kyw10987',
+    maintainer_email='kyw10987@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'camera_publisher = publisher.camera_publisher:main',
-            'lane_detection_subscriber = subscriber.lane_detection_subscriber:main',
-            'stop_line_subscriber = subscriber.stop_line_subscriber:main',
-            'child_zone_subscriber = subscriber.child_zone_subscriber:main',
-            'lane_motor_bridge = image2motor.lane_motor_bridge:main',
+            'motor_controller_pub_node = motor_controller.pub_node.publisher:main',
+            'motor_controller_sub_node = motor_controller.sub_node.subscriber:main'
         ],
     },
 )
+
+

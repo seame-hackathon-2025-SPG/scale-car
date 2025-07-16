@@ -1,6 +1,8 @@
 from setuptools import find_packages, setup
+import os
+from glob import glob
 
-package_name = 'camera_node'
+package_name = 'integration'
 
 setup(
     name=package_name,
@@ -10,21 +12,18 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        # launch 파일 포함
+        (os.path.join('share', package_name, 'launch'), glob('integration/launch/*.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='kimsh',
-    maintainer_email='kimsh@todo.todo',
+    maintainer='spg1234',
+    maintainer_email='spg1234@todo.todo',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'camera_publisher = publisher.camera_publisher:main',
-            'lane_detection_subscriber = subscriber.lane_detection_subscriber:main',
-            'stop_line_subscriber = subscriber.stop_line_subscriber:main',
-            'child_zone_subscriber = subscriber.child_zone_subscriber:main',
-            'lane_motor_bridge = image2motor.lane_motor_bridge:main',
         ],
     },
 )
